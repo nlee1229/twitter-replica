@@ -1,16 +1,16 @@
 import './App.css';
-import Sidebar from './components/Sidebar';
+import React from 'react';
+import Sidebar from './Sidebar';
+import Feed from './Feed';
 
 function App() {
   return (
-    // BEM
     <div className="app">
-      <h1>Hey there. Let's do this!</h1>
 
       {/* Sidebar */}
       <Sidebar />
-      {/* Feedback */}
-      
+      {/* Feed */}
+      <Feed />
       {/* Widgets */}
     </div>
   );

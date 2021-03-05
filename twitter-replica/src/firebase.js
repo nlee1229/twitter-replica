@@ -16,4 +16,6 @@ const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 const db = firebaseApp.firestore();
 
-export default db;
+export default db; // allows us to go into any file and pull the DB in
+
+// in this file, we connect the backend to firebase

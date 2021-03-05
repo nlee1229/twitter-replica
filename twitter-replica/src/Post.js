@@ -20,23 +20,24 @@ function Post({
     return (
         <div className="post">
             <div className="post_avatar">
-                <Avatar src="https://images-na.ssl-images-amazon.com/images/I/51C045KkMjL.jpg"></Avatar>   
+                <Avatar src={avatar} />   
             </div>    
 
             <div className="post_body">
                 <div className="post_header">
                     <div className="post_headerText">
                         <h3>
-                            Nicholas Lee <span className="post_headerSpecial">
-                                <VerifiedUserIcon className="post_badge" /> @aznnick1234
+                            {displayName}{" "}
+                            <span className="post_headerSpecial">
+                                {verified && <VerifiedUserIcon className="post_badge" />} @{username}
                             </span>
                         </h3>
                     </div>
                     <div className="post_headerDescription">
-                        <p>I challenge you to take this one.</p>
+                        <p>{text}</p>
                     </div>
                 </div>
-                    <img src="https://post.healthline.com/wp-content/uploads/2019/02/bunch_of_two_large_and_one_small_bananas-1200x628-facebook.jpg" alt=""/>
+                    <img src={image} alt=""/>
                     <div className="post_footer">
                         <ChatBubbleOutlineIcon fontSize="small" />
                         <RepeatIcon fontSize="small" />

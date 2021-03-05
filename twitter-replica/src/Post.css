@@ -7,8 +7,8 @@
 
 .post_body > img {
     border-radius: 20px;
-    height: 250px;
-    width: 400px;
+    /* height: 250px;
+    width: 400px; */
 }
 
 .post_footer {

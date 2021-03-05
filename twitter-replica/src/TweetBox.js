@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './TweetBox.css'; 
-import {Avatar, Button, Input} from "@material-ui/core";
+import {Avatar, Button} from "@material-ui/core";
 import db from './firebase';
 
 function TweetBox() {
@@ -12,8 +12,8 @@ const sendTweet = e => {
     e.preventDefault();
     // Mapping the objects 
     db.collection("posts").add({
-        displayName: 'Matt Ehrlich',
-        username: "NotMatt",
+        displayName: 'Nick',
+        username: "NotNick",
         verified: true,
         text: tweetMsg,
         image: tweetImg,
@@ -23,7 +23,6 @@ const sendTweet = e => {
     setTweetMsg("");
     setTweetImg("");
 }
-
 
     return (
         <div className="tweetBox">
